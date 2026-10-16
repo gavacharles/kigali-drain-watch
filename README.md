@@ -2,6 +2,8 @@
 
 **Open the tool: https://gavacharles.github.io/kigali-drain-watch/**
 
+**Watch the 40-second demo: https://gavacharles.github.io/kigali-drain-watch/demo.html**
+
 A public map of the City of Kigali's drainage channels, built for the Rwanda Flood Watch programme.
 
 - **Channels:** 5,675 channel stretches (977 km), each ranked by maintenance priority and emerging risk, with the reasons.
