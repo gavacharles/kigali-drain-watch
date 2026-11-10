@@ -1,29 +1,23 @@
-# Kigali Drain Watch
+# kigali-drain-watch
 
-**Open the tool: https://gavacharles.github.io/kigali-drain-watch/**
+Static GitHub Pages site for Kigali Drain Watch, a map of the City of Kigali's drainage channels with maintenance priorities, priority road crossings, restored wetlands and satellite imagery. Live at https://gavacharles.github.io/kigali-drain-watch/ (demo: https://gavacharles.github.io/kigali-drain-watch/demo.html)
 
-**Watch the 40-second demo: https://gavacharles.github.io/kigali-drain-watch/demo.html**
+## Contents
 
-A public map of the City of Kigali's drainage channels, built for the Rwanda Flood Watch programme.
+| Path | What it is |
+|---|---|
+| `index.html` | The map application |
+| `demo.html`, `demo.mp4`, `demo_still.png` | Short demo page, video and still |
+| `segments.json`, `system_labels.json` | Channel stretches and system labels |
+| `crossings.json`, `hotspots.json`, `restoration.json`, `places.json`, `boundary.json` | Map layers |
+| `satellite.json`, `sat_*.jpg` | Satellite tile index and image tiles |
+| `basemap_light.png`, `basemap_dark.png` | Basemaps |
+| `.nojekyll` | Serve files as they are on GitHub Pages |
 
-- **Channels:** 5,675 channel stretches (977 km), each ranked by maintenance priority and emerging risk, with the reasons.
-- **Crossings:** the 40 road crossings to clear first.
-- **Wetlands:** the six restored wetlands, measured from Sentinel-2.
-- **Satellite imagery:** shown when you zoom in.
-
-Click any channel to see why it ranks where it does, walk upstream or downstream, or trace where its water goes.
+The site is built from `tool/` in the rwanda-flood-watch repository. To view locally, serve the folder (`python -m http.server`) and open http://localhost:8000.
 
 ## Sources
 
-- **Channels:** Copernicus GLO-30 DEM.
-- **Roads, places and stream names:** © OpenStreetMap contributors.
-- **Buildings:** Microsoft Global ML Building Footprints.
-- **Built-up area and population:** JRC GHSL R2023A.
-- **Wetlands:** ESA WorldCover.
-- **Satellite imagery:** Copernicus Sentinel-2, 2025–26 mosaic at 10 m; Esri World Imagery (Esri, Maxar, Earthstar Geographics).
-- **Design storms:** CHIRPS and CMIP6.
-- **Hotspots:** City of Kigali and press reports.
-
-The flood model is a screening model. Its rankings are reliable; its depths are indicative.
+Copernicus GLO-30 DEM (channels); © OpenStreetMap contributors (roads, places, stream names); Microsoft Global ML Building Footprints; JRC GHSL R2023A; ESA WorldCover; Copernicus Sentinel-2 and Esri World Imagery; CHIRPS and CMIP6 (design storms); City of Kigali and press reports (hotspots). Rankings come from a screening model; depths are indicative.
 
 Analysis and tool: Gava Charles.
